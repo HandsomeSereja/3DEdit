@@ -4,7 +4,11 @@ set(NAME_PR 3DEdit)
 
 project(${NAME_PR})
 
-add_executable(${NAME_PR} src/main.cpp)
+add_executable(${NAME_PR} 
+	src/main.cpp
+	src/Renderer/ShaderProgram.cpp
+	src/Renderer/ShaderProgram.h
+)
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
